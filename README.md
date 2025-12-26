@@ -12,21 +12,21 @@ Proyek ini dibangun dengan arsitektur **Microservices** sederhana, memisahkan lo
 
 ### Core AI & Data Science
 
-* **Python:** Bahasa pemrograman utama.
-* **Scikit-Learn:** Library Machine Learning untuk algoritma k-NN, preprocessing, dan metrik evaluasi.
-* **Pandas & NumPy:** Manipulasi dan analisis data numerik.
-* **Joblib:** Penyimpanan dan pemuatan model (`.pkl`).
+- **Python:** Bahasa pemrograman utama.
+- **Scikit-Learn:** Library Machine Learning untuk algoritma k-NN, preprocessing, dan metrik evaluasi.
+- **Pandas & NumPy:** Manipulasi dan analisis data numerik.
+- **Joblib:** Penyimpanan dan pemuatan model (`.pkl`).
 
 ### Backend (API)
 
-* **FastAPI:** Framework modern super cepat untuk membangun API.
-* **Uvicorn:** Server ASGI untuk menjalankan FastAPI.
-* **Pydantic:** Validasi data input secara ketat.
+- **FastAPI:** Framework modern super cepat untuk membangun API.
+- **Uvicorn:** Server ASGI untuk menjalankan FastAPI.
+- **Pydantic:** Validasi data input secara ketat.
 
 ### Frontend (UI)
 
-* **Streamlit:** Framework untuk membuat web apps data science yang interaktif.
-* **Requests:** Library untuk komunikasi HTTP antara Frontend dan Backend.
+- **Streamlit:** Framework untuk membuat web apps data science yang interaktif.
+- **Requests:** Library untuk komunikasi HTTP antara Frontend dan Backend.
 
 ---
 
@@ -111,7 +111,7 @@ pip install -r requirements.txt
 
 ```
 
-*(Atau install manual: `pip install pandas numpy scikit-learn matplotlib seaborn joblib openpyxl fastapi uvicorn pydantic streamlit requests`)*
+_(Atau install manual: `pip install pandas numpy scikit-learn matplotlib seaborn joblib openpyxl fastapi uvicorn pydantic streamlit requests`)_
 
 ---
 
@@ -140,8 +140,8 @@ uvicorn api:app --reload
 
 ```
 
-* Tunggu sampai muncul tulisan: `Application startup complete.`
-* API berjalan di: `http://127.0.0.1:8000`
+- Tunggu sampai muncul tulisan: `Application startup complete.`
+- API berjalan di: `http://127.0.0.1:8000`
 
 ### Tahap 3: Menjalankan Frontend (Wajah)
 
@@ -152,7 +152,7 @@ streamlit run app.py
 
 ```
 
-* Browser akan otomatis terbuka dan menampilkan aplikasi Lolosin.ai.
+- Browser akan otomatis terbuka dan menampilkan aplikasi Lolosin.ai.
 
 ---
 
@@ -169,7 +169,7 @@ python dashboard.py
 
 ---
 
-## ⚠️ Penafian (Disclaimer)
+## ⚠️ Disclaimer
 
 Sistem ini dikembangkan sebagai purwarupa (prototype) tugas akhir mata kuliah **Kecerdasan Buatan**. Hasil rekomendasi bersifat prediksi probabilistik berdasarkan data historis dan **tidak menjamin** penerimaan siswa di sekolah terkait. Gunakan sebagai alat bantu pengambilan keputusan, bukan penentu mutlak.
 
