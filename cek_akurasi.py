@@ -68,19 +68,12 @@ rf_model.fit(X_train_scaled, y_train)
 acc_rf_top1 = accuracy_score(y_test, rf_model.predict(X_test_scaled))
 acc_rf_top6 = get_top_n_accuracy(rf_model, X_test_scaled, y_test, n=6)
 
-# 6. Hitung Baseline (Tebakan Acak)
-# Peluang acak = 1 / Jumlah Sekolah Unik
-jumlah_sekolah = len(np.unique(y))
-acc_random_top1 = 1 / jumlah_sekolah
-acc_random_top6 = 6 / jumlah_sekolah
-
 # 7. TAMPILKAN HASIL
 print("\n" + "="*70)
 print("📊 HASIL AKHIR")
 print("="*70)
 print(f"{'Model / Metode':<35} | {'Top-1 Accuracy':<15} | {'Top-6 Accuracy':<15}")
 print("-" * 70)
-print(f"{'1. Tebakan Acak (Random Guessing)':<35} | {acc_random_top1:.2%}          | {acc_random_top6:.2%}")
-print(f"{'2. Random Forest (Pembanding)':<35} | {acc_rf_top1:.2%}          | {acc_rf_top6:.2%}")
-print(f"{'3. k-NN Standard (Model Kita)':<35} | {acc_knn_top1:.2%}          | {acc_knn_top6:.2%}")
+print(f"{'1. Random Forest (Pembanding)':<35} | {acc_rf_top1:.2%}          | {acc_rf_top6:.2%}")
+print(f"{'2. k-NN Standard (Model Kita)':<35} | {acc_knn_top1:.2%}          | {acc_knn_top6:.2%}")
 print("="*70)

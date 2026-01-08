@@ -181,6 +181,6 @@ st.markdown("""
     kelulusan atau penerimaan di sekolah yang bersangkutan 100% benar atau valid. 
     Gunakan hasil ini sebagai referensi pendukung, bukan penentu utama keputusan.
     <br><br>
-    Developed with ❤️ by Kelompok 3 | Powered by Validated k-NN Algorithm
+    Developed with ❤️ by Aditya Putra Ramadhan | Powered by Validated k-NN Algorithm
 </div>
 """, unsafe_allow_html=True)
